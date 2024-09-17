@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Calculator - PROYECTO 1 -</h1>
+      <img src="icons/conf.svg" alt="" width="100" />
+    </header>
+
+    <section id="calculator" class="calculator">
+      <input
+        type="number"
+        name="toReceiveResults"
+        id="toReceiveResults"
+        placeholder="0"
+      />
+      <!-- CONTROLS BUTTONS  -->
+      <button class="controls" value="mc">MC</button>
+      <button class="controls" value="mr">MR</button>
+      <button class="controls" value="m+">M+</button>
+      <button class="controls" value="m-">M-</button>
+
+      <button  class="allButtons notNumbers" value="divisor">&divide;</button>
+      <button class="allButtons notNumbers" value="clearOperations">CE</button>
+      <button class="allButtons notNumbers" value="clearAll">C</button>
+      <button class="allButtons notNumbers" value="clearLastOne">
+        <svg
+          height="48"
+          viewBox="0 0 48 48"
+          width="48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h48v48H0z" fill="none" />
+          <path
+            d="M44 6H14c-1.38 0-2.47.7-3.19 1.76L0 23.99l10.81 16.23C11.53 41.28 12.62 42 14
+                     42h30c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zm-6 25.17L35.17 34 28 26.83 20.83 34
+                      18 31.17 25.17 24 18 16.83 20.83 14 28 21.17 35.17 14 38 16.83 30.83 24 38 31.17z"
+          />
+        </svg>
+      </button>
+
+      <button class="numbers allButtons">7</button>
+      <button class="numbers allButtons">8</button>
+      <button class="numbers allButtons">9</button>
+      <button class="operator allButtons notNumbers" onclick="">&times;</button>
+
+      <button class="numbers allButtons">4</button>
+      <button class="numbers allButtons">5</button>
+      <button class="numbers allButtons">6</button>
+      <button class="operator allButtons notNumbers" onclick="">-</button>
+
+      <button class="numbers allButtons">1</button>
+      <button class="numbers allButtons">2</button>
+      <button class="numbers allButtons">3</button>
+      <button class="operator allButtons notNumbers" value="+" onclick="">
+        +
+      </button>
+
+      <button class="operator allButtons notNumbers" onclick="">
+        <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <rect fill="none" height="256" width="256" />
+          <path
+            d="M205.7,50.3a8.1,8.1,0,0,0-11.4,0l-144,144a8.1,8.1,0,0,0,0,11.4,8.2,8.2,0,0,0,11.4,0l144-144A8.1,8.1,0,0,0,205.7,50.3Z"
+          />
+          <path
+            d="M64,112a8,8,0,0,0,16,0V80h32a8,8,0,0,0,0-16H80V32a8,8,0,0,0-16,0V64H32a8,8,0,0,0,0,16H64Z"
+          />
+          <path d="M224,176H144a8,8,0,0,0,0,16h80a8,8,0,0,0,0-16Z" />
+        </svg>
+      </button>
+      <button class="numbers allButtons">0</button>
+      <button class="operator allButtons notNumbers">.</button>
+      <button class="equal" onclick="">=</button>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
